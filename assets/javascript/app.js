@@ -20,13 +20,13 @@ var questions = [
 	question: "Which President was known as Slick Willie?",
 	answers: ["William McKinley", "William Howard Taft", "Bill Clinton", "William Henry Harrison"],
 	correctAnswer: "Bill Clinton",
-	tidbit: "Journalist Paul Greenberg coined this nickname for Clinton during his 1980 Arkansas gubernatorial run.",
+	tidbit: "Journalist Paul Greenberg coined this nickname for Bill Clinton during his 1980 Arkansas gubernatorial run.",
 },
 {
 	question: "Which President was nicknamed Weasel Words?",
 	answers: ["Woodrow Wilson", "Calvin Coolidge", "George W. Bush", "Barack Obama"],
 	correctAnswer: "Woodrow Wilson",
-	tidbit: "Wilson was given this nickname by Theodore Roosevelt,whose speech in St. Louis in May of 1916 described Wilson’s penchant for creating phrases in which the words contradicted one another.",
+	tidbit: "Woodrow Wilson was given this nickname by Theodore Roosevelt,whose speech in St. Louis in May of 1916 described Wilson’s penchant for creating phrases in which the words contradicted one another.",
 },
 {
 	question: "Which President was known as The Sphinx?",
@@ -50,7 +50,7 @@ var questions = [
 	question: "Which President was known as Ike?",
 	answers: ["Dwight D. Eisenhower", "Ulysses S. Grant", "Chester Arthur", "Gover Cleveland"],
 	correctAnswer: "Dwight D. Eisenhower",
-	tidbit: "All of Eisenhower's brothers were known as Ike by their family. Brother Edgar was known as Big Ike and Dwight was known as Little Ike.",
+	tidbit: "All of Dwight D. Eisenhower's brothers were known as Ike by their family. Brother Edgar was known as Big Ike and Dwight was known as Little Ike.",
 }];
 
 //Variables
@@ -90,7 +90,8 @@ var quiz = {
 		clearInterval(timer);
 		quiz.unanswered++;
 		$("#container").html("<h2> Time's Up! </h2>");
-		$("#container").append("<h3> The correct answer is: "+questions[quiz.currentQuestion].correctAnswer.tidbit+ "</h3>");
+		$("#container").append("<h3> The correct answer is: "+questions[quiz.currentQuestion].correctAnswer+ "</h3>");
+		$("#container").append("<h3> FYI: "+ questions[quiz.currentQuestion].tidbit +"</h3>");
 		if(quiz.currentQuestion==questions.length-1){
 			setTimeout(quiz.results, 3000);
 		} else {
@@ -122,7 +123,7 @@ var quiz = {
 		console.log("Woo Hoo!  That answer is Correct");
 		clearInterval(timer);
 		quiz.correct++;
-		$("#container").html('<h2> Woo Hoo!  That answer is correct! </h2>');
+		$("#container").html('<h2> Woo Hoo!  That answer is Correct! </h2>');
 		if(quiz.currentQuestion==questions.length-1){
 			setTimeout(quiz.results,3000);
 		} else	{
@@ -137,13 +138,13 @@ var quiz = {
 		console.log("Incorrect");
 		clearInterval(timer);
 		quiz.incorrect++;
-		$("#container").html('<h2> Incorrect! </h2>');
+		$("#container").html('<h2> Sorry, that is Incorrect! </h2>');
 		$("#container").append("<h3> The correct answer is: "+ questions[quiz.currentQuestion].correctAnswer +"</h3>");
-		$("#container").append("<h3> Here's a tibit of info: "+ questions[quiz.currentQuestion].tidbit +"</h3>");
+		$("#container").append("<h3> FYI: "+ questions[quiz.currentQuestion].tidbit +"</h3>");
 		if(quiz.currentQuestion==questions.length-1){
-			setTimeout(quiz.results,3000);
+			setTimeout(quiz.results,4000);
 		} else	{
-			setTimeout(quiz.nextQuestion, 3000);
+			setTimeout(quiz.nextQuestion, 4000);
 		}
 	},
 
