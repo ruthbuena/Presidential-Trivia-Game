@@ -18,7 +18,7 @@ h2,
 h3 {
 	font-size: 40px;
 	margin-top: 50px;
-=======
+
 /*Game Title*/
 h1 {
 	
@@ -27,12 +27,10 @@ h1 {
 body {
 	background-image: url("assets/images/flag.jpeg");
 	background-color: #cccccc;
->>>>>>> c67af1b29b5712ed88ccd38bf9a8e90ef954829b
 }
 
 /*Main Section Container*/
 #container {
-<<<<<<< HEAD
 	text-align: center;
 	background-image: ("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT5hzfYetwAA4ntaGBhE1uA7XqWSr3NSG9v1WufdZYV_siwFszsA");
 	font-family: 'Ruthie', 'cursive';
@@ -62,6 +60,8 @@ body {
     font-size: 40px;
     margin: 4px 2px;
     cursor: pointer;
+    list-style-type: lower-alpha;
+    list-style-position: inside;
 
 }
 
@@ -69,7 +69,6 @@ body {
 #button- {
 	text-align: center;
 	font-family: 'Ruthie', 'cursive';
-=======
 
 }
 
@@ -80,6 +79,6 @@ body {
 
 /*Start Button*/
 #start {
->>>>>>> c67af1b29b5712ed88ccd38bf9a8e90ef954829b
+
 
 }
