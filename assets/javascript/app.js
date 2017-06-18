@@ -20,31 +20,55 @@ var questions = [
 	question: "Which President was known as Slick Willie?",
 	answers: ["William McKinley", "William Howard Taft", "Bill Clinton", "William Henry Harrison"],
 	correctAnswer: "Bill Clinton",
+<<<<<<< HEAD
+=======
+	tidbit: "Journalist Paul Greenberg coined this nickname for Clinton during his 1980 Arkansas gubernatorial run.",
+>>>>>>> c67af1b29b5712ed88ccd38bf9a8e90ef954829b
 },
 {
 	question: "Which President was nicknamed Weasel Words?",
 	answers: ["Woodrow Wilson", "Calvin Coolidge", "George W. Bush", "Barack Obama"],
 	correctAnswer: "Woodrow Wilson",
+<<<<<<< HEAD
+=======
+	tidbit: "Wilson was given this nickname by Theodore Roosevelt,whose speech in St. Louis in May of 1916 described Wilson’s penchant for creating phrases in which the words contradicted one another.",
+>>>>>>> c67af1b29b5712ed88ccd38bf9a8e90ef954829b
 },
 {
 	question: "Which President was known as The Sphinx?",
 	answers: ["Alexander Hamilton", "Theodore Roosevelt", "Franklin Roosevelt", "George Washington"],
 	correctAnswer: "Franklin Roosevelt",
+<<<<<<< HEAD
+=======
+	tidbit: "The press labeled FDR this nickname during his refusal to acknowledge whether or not he would run for a third presidential term in 1940",
+>>>>>>> c67af1b29b5712ed88ccd38bf9a8e90ef954829b
 },
 {
 	question: "Which President was known as Tricky Dick?",
 	answers: ["John F Kennedy", "Lyndon Johnson", "Ronald Reagan", "Richard Nixon"],
 	correctAnswer: "Richard Nixon",
+<<<<<<< HEAD
+=======
+	tidbit: "Nixon was given this moniker by a reporter during his 1950 US Senate run in which he used tactics that framed his opponent, Helen Douglas, as a friend of communists",
+>>>>>>> c67af1b29b5712ed88ccd38bf9a8e90ef954829b
 },
 {
 	question: "Which President was nicknamed Uncle Jumbo?",
 	answers: ["William McKinley", "William Henry Harrison", "Grover Cleveland", "Harry Truman"],
 	correctAnswer: "Grover Cleveland",
+<<<<<<< HEAD
+=======
+	tidbit: "Grover Cleveland, who weighed over 250 pounds, was given this nickname when he served as the governor of New York.",	
+>>>>>>> c67af1b29b5712ed88ccd38bf9a8e90ef954829b
 },
 {
 	question: "Which President was known as Ike?",
 	answers: ["Dwight D. Eisenhower", "Ulysses S. Grant", "Chester Arthur", "Gover Cleveland"],
 	correctAnswer: "Dwight D. Eisenhower",
+<<<<<<< HEAD
+=======
+	tidbit: "All of Eisenhower's brothers were known as Ike by their family. Brother Edgar was known as Big Ike and Dwight was known as Little Ike.",
+>>>>>>> c67af1b29b5712ed88ccd38bf9a8e90ef954829b
 }];
 
 //Game as an object
@@ -54,7 +78,10 @@ var quiz = {
 	currentQuestion:0,
 	counter:30,
 	correct:0,
+<<<<<<< HEAD
 	unanswered:0,
+=======
+>>>>>>> c67af1b29b5712ed88ccd38bf9a8e90ef954829b
 	incorrect:0,
 	
 	countdown:function(){
@@ -101,6 +128,7 @@ var quiz = {
 	},
 	clicked: function(e){
 		clearInterval(timer);
+<<<<<<< HEAD
 		if($(e.target).data("name").trim()==questions[quiz.currentQuestion].correctAnswer){
 			quiz.answeredCorrect();
 				} else {
@@ -114,6 +142,19 @@ var quiz = {
 		clearInterval(timer);
 		quiz.correct++;
 		$("#container").html('<h2> Woo Hoo!  That is Right! </h2>');
+=======
+		if($(e.target).data("name")==questions[quiz.currentQuestion].correctAnswer){
+			quiz.answeredCorrectly();
+				} else {
+			quiz.answeredWrong();
+				}
+	},
+	answeredCorrect: function(){
+		console.log("Correct");
+		clearInterval(timer);
+		quiz.correct++;
+		$("#container").html('<h2> Correct! </h2>');
+>>>>>>> c67af1b29b5712ed88ccd38bf9a8e90ef954829b
 		if(quiz.currentQuestion==questions.length-1){
 			setTimeout(quiz.results,3000);
 		} else	{
@@ -121,10 +162,17 @@ var quiz = {
 		}
 	},
 	answeredWrong: function (){
+<<<<<<< HEAD
 		console.log("Incorrect!");
 		clearInterval(timer);
 		quiz.incorrect++;
 		$("#container").html('<h2> Sorry, that is Incorrect </h2>');
+=======
+		console.log("Incorrect");
+		clearInterval(timer);
+		quiz.incorrect++;
+		$("#container").html('<h2> Incorrect! </h2>');
+>>>>>>> c67af1b29b5712ed88ccd38bf9a8e90ef954829b
 		$("#container").append("<h3> The correct answer is: "+questions[quiz.currentQuestion].correctAnswer+ "</h3>");
 		if(quiz.currentQuestion==questions.length-1){
 			setTimeout(quiz.results,3000);
@@ -141,3 +189,8 @@ var quiz = {
 		quiz.loadQuestion = 0;
 	}
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> c67af1b29b5712ed88ccd38bf9a8e90ef954829b
