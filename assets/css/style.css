@@ -1,0 +1,61 @@
+html {
+	background-color: #c0c0c0;
+	font-family: 'Ruthie', 'cursive';
+}
+
+body {
+	font-family: 'Ruthie', 'cursive';
+	background-image: (url"assets/css/images/flag.jpeg");
+	background-color: transparent;
+}
+
+h1 {
+	font-size: 75px;
+}
+
+h2, 
+h3 {
+	font-size: 40px;
+	margin-top: 50px;
+}
+
+/*Main Section Container*/
+#container {
+	text-align: center;
+	background-image: ("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT5hzfYetwAA4ntaGBhE1uA7XqWSr3NSG9v1WufdZYV_siwFszsA");
+	font-family: 'Ruthie', 'cursive';
+	font-size: 40px;
+}
+
+
+/*Screen middle*/
+#middle {
+	text-align: center;
+	/*font-family: 'Ruthie', 'cursive';
+	background-image: ("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT5hzfYetwAA4ntaGBhE1uA7XqWSr3NSG9v1WufdZYV_siwFszsA");*/
+}
+
+/*Start Button*/
+#start,
+.answer-btn {
+	text-align: center;
+	font-family: 'Ruthie', 'cursive';
+	background-color: #e7e7e7;
+    border: none;
+    color: black;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+#reset,
+#button- {
+	text-align: center;
+	font-family: 'Ruthie', 'cursive';
+
+}
