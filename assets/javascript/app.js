@@ -103,7 +103,7 @@ var quiz = {
 		$("#container").html("Game Over");
 		$("#container").append("<h3>Correct: "+ quiz.correct+ "</h3>");
 		$("#container").append ("<h3>Incorrect: " + quiz.incorrect + "</h3>");
-		$("#container").append("<h3>unanswered:  "+ quiz.unanswered+ "</h3>");
+		$("#container").append("<h3>Unanswered:  "+ quiz.unanswered+ "</h3>");
 		$("#container").append('<button id="reset">RESET</button>');
 	},
 
@@ -117,18 +117,6 @@ var quiz = {
 				console.log (questions[quiz.currentQuestion].correctAnswer);
 				console.log($(e.target).data("name"));
 	},
-
-	// answeredCorrect: function(){
-	// 	console.log("Woo Hoo!  That is Right!");
-	// 	clearInterval(timer);
-	// 	quiz.correct++;
-	// 	$("#container").html('<h2> Woo Hoo!  That is Right! </h2>');
-	// 	if($(e.target).data("name")==questions[quiz.currentQuestion].correctAnswer){
-	// 		quiz.answeredCorrect();
-	// 			} else {
-	// 		quiz.answeredWrong();
-	// 			}
-	// },
 
 	answeredCorrect: function(){
 		console.log("Woo Hoo!  That answer is Correct");
